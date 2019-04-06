@@ -455,5 +455,5 @@ TLC59116::Broadcast& TLC59116::Broadcast::enable_outputs(bool yes, bool with_del
 
 void TLC59116::Broadcast::propagate_register(byte register_num) {
   byte my_value = shadow_registers[register_num];
-  for (byte i=0; i<= manager.device_ct; i++) { manager.devices[i]->shadow_registers[register_num]=my_value; }
+  for (byte i=0; i< manager.device_ct; i++) { manager.devices[i]->shadow_registers[register_num]=my_value; }
   }
